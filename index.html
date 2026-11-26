@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Dra. Mariana Herrera Riveros | Medicina Veterinaria</title>
+<title>Dra. Mariana Herrera Riveros | Veterinaria, nutrición y cat friendly</title>
 <meta name="description" content="Dra. Mariana Herrera Riveros: atención veterinaria con cariño y ciencia para perros y gatos. Agenda tu cita por WhatsApp.">
 <meta property="og:title" content="Dra. Mariana Herrera Riveros">
 <meta property="og:description" content="Atención veterinaria con cariño y ciencia. Agenda tu cita.">
@@ -176,7 +176,7 @@ footer{background:#1d1630;color:#9d94b8;text-align:center;padding:26px 20px;font
   <div class="wrap hero-grid">
     <div>
       <div class="badge rv"><span class="dot"></span> Médica veterinaria · Universidad de la Salle</div>
-      <h1 class="rv">Hola, soy <span class="grad">Mariana</span>,<br>médica veterinaria para <span class="type" id="type"></span></h1>
+      <h1 class="rv">Hola, soy <span class="grad">Mariana</span>,<br>médica veterinaria con énfasis en <span class="type" id="type"></span></h1>
       <p class="lead rv">Me formé en la Universidad de la Salle y dedico mi tiempo a cuidar animales: desde jornadas de vacunación y desparasitación hasta voluntariado con animales sin hogar en Ciudad Bolívar.</p>
       <div class="hero-cta rv">
         <a class="btn btn-p" id="ctaWa" href="#contacto">💬 Escríbeme</a>
@@ -204,6 +204,8 @@ footer{background:#1d1630;color:#9d94b8;text-align:center;padding:26px 20px;font
       <p class="lead">Soy médica veterinaria egresada de la Universidad de la Salle. Creo que la medicina veterinaria también es servicio: por eso participo en jornadas comunitarias y ayudo a animales que no tienen hogar.</p>
       <ul class="ticks">
         <li>Médica veterinaria · Universidad de la Salle</li>
+        <li>Énfasis en nutrición</li>
+        <li>Manejo cat friendly</li>
         <li>Jornadas de vacunación y desparasitación</li>
         <li>Voluntariado con animales sin hogar en Ciudad Bolívar</li>
       </ul>
@@ -261,7 +263,7 @@ footer{background:#1d1630;color:#9d94b8;text-align:center;padding:26px 20px;font
 const CFG={
   whatsapp:"573212968748",
   email:"",                         // opcional: pon tu correo real aquí
-  palabras:["perros","gatos","animales sin hogar"]
+  palabras:["nutrición","manejo cat friendly"]
 };
 /* ========================================= */
 const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
@@ -288,7 +290,7 @@ $$("#links a").forEach(a=>a.onclick=()=>$("#links").classList.remove("open"));
 (()=>{const p=$("#paws");for(let i=0;i<14;i++){const s=document.createElement("span");s.className="paw";s.textContent="🐾";
  s.style.cssText=`left:${Math.random()*100}%;top:${Math.random()*100}%;--r:${Math.random()*80-40}deg;animation-delay:${Math.random()*7}s;font-size:${18+Math.random()*22}px`;p.appendChild(s)}})();
 /* marquee */
-(()=>{const t=["Medicina veterinaria","Vacunación","Desparasitación","Voluntariado","Animales sin hogar","Universidad de la Salle"];
+(()=>{const t=["Medicina veterinaria","Nutrición","Manejo cat friendly","Vacunación","Desparasitación","Voluntariado"];
  const h=t.map(x=>`<span>${x}</span><span>🐾</span>`).join("");$("#mq").innerHTML=h+h})();
 /* reveal + counters */
 const io=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;
